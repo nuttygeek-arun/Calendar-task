@@ -19,7 +19,6 @@ export const Calendar = ({ date }: {date: string}) => {
   }, [])
 
   useEffect(() => {
-    debugger;
     const d = moment(date);
     setSelectedDate(d.format('D'));
     const noOfDaysInMonth: number = d.daysInMonth();
