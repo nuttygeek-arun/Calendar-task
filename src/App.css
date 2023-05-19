@@ -1,0 +1,37 @@
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-grid.header {
+  margin-bottom: 5px;
+}
+
+.date-cell {
+  padding: 10px;
+  text-align: center;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.calendar-grid .date-cell.selected {
+  background: white;
+  color: rgb(83, 123, 123);;
+}
+
+.date-cell:hover {
+  background: gray;
+}
+
+.calendar-grid.header .date-cell:hover {
+  background: rgb(83, 123, 123);
+  cursor:default;
+}
+
+.calendar-wrapper {
+  width: 500px;
+  background-color: rgb(83, 123, 123);;
+  padding: 10px;
+  color: white;
+}
